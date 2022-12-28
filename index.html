@@ -1,1 +1,256 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/sp-class.css">
+        <link rel="icon" type="image/x-icon" href="./assets/images/logo/logo.svg">
+        <title>Portfolio | My Works</title>
+    </head>
+
+    <body class="fw-light bg-secondary">
+
+        <header class="w-100 fixed-top border-white border-2 border-bottom sp-class-animate--header">
+            <section class="container">
+                <section class="d-flex justify-content-between align-items-center sp-class-header-height">
+                    <a href="#">
+                        <img src="./assets/images/logo/logo.svg" class="sp-class--logo" />
+                    </a>
+
+                    <nav class="fs-5 d-none d-md-block">
+                        <a href="#" class="sp-class-animate--desktop-menu-links px-3 py-1 text-white rounded-1">Home</a>
+                        <a href="#about" class="sp-class-animate--desktop-menu-links px-3 py-1 text-white rounded-1">About</a>
+                        <a href="#skills" class="sp-class-animate--desktop-menu-links px-3 py-1 text-white rounded-1">Skills</a>
+                        <a href="#portfolio" class="sp-class-animate--desktop-menu-links px-3 py-1 text-white rounded-1">Portfolio</a>
+                        <a href="#contact" class="sp-class-animate--desktop-menu-links px-3 py-1 text-white rounded-1">Contact</a>
+                    </nav>
+
+                    <section class="d-block d-md-none text-white menu-btn" role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg d-none" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                        </svg>
+                    </section>
+                </section>
+            </section>
+        </header>
+
+        <section class="d-flex justify-content-center mobile-menu position-fixed h-100 w-75 border-start border-2 border-white">
+            <nav class="d-flex flex-column">
+                <a class="fs-4 mobile-menu--links text-white" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house me-3" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                    </svg>
+                  Home
+                </a>
+                <a class="fs-4 mobile-menu--links text-white" href="#about">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person me-3" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                    </svg>
+                    about
+                </a>
+                <a class="fs-4 mobile-menu--links text-white" href="#skills">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bar-chart me-3" viewBox="0 0 16 16">
+                        <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+                    </svg>
+                    skills
+                </a>
+                <a class="fs-4 mobile-menu--links text-white" href="#portfolio">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-brush me-3" viewBox="0 0 16 16">
+                        <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
+                    </svg>
+                    portfolio
+                </a>
+                <a class="fs-4 mobile-menu--links text-white" href="#contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope me-3" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg>
+                      contact
+                </a>
+            </nav>
+        </section>
+
+        <section class="desktop-hero sp-class-viewport-height--100"></section>
+
+        <section class="bg-secondary py-5" id="about">
+            <section class="container text-white">
+                <h2 class="py-5 text-capitalize fw-normal d-flex align-items-center justify-content-center mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person me-3" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                    </svg>
+                    A little bit about me</h2>
+                <section class="row ">
+                    <section class="col-sm-12 col-md-12 col-lg-6 text-center pb-3">
+                        <p class="fs-5">Hi, my name is Alex. I am a beginner front end developer. In the beginning, development was my hobby, because I like to build the interface of the web site.</p>
+                        <p class="fs-5">I've even helped a few friends build their company's website. Some time ago I decided to help other people with my experience and develop with them.</p>
+                        <p class="fs-5">You can see the websites I have made in my <a href="#portfolio">portfolio</a></p>
+                    </section>
+                    <section class="col-sm-12 col-md-12 col-lg-6 pb-3">
+                        <section class="d-flex align-items-center h-100">
+                            <img src="./assets/images/about/about.jpg" alt="About image" class="w-100 rounded-2 sp-class-shadow--about-image"/>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="skills py-5 bg-dark" id="skills">
+            <section class="container text-white">
+                <h2 class="py-5 text-capitalize fw-normal d-flex align-items-center justify-content-center mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bar-chart me-3" viewBox="0 0 16 16">
+                        <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+                    </svg>
+                    my skills</h2>
+                <section class="row">
+                    <section class="col-sm-12 col-md-12 col-lg-6 pb-3">
+                        <p class="text-center">As a beginner front end web developer, I learned the basics of various front-end languages and frameworks that allow me to build a website interface.</p>
+                        <p class="text-center">Every day, new and existing frameworks are updated and created, which does not allow me to relax and motivates to develop and keep up with the times. My modest knowledge allows me to work on interesting and complex projects.</p>
+                        <p class="text-center">A front-end developer has to study a wide variety of topics. When the knowledge is refined and the developer knows well when to use which technique, the more quality the interface he creates for the website.</p>
+                    </section>
+                    <section class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="progress mb-xl-3 mb-lg-4 mb-md-3 mb-2" style="height: 1.5rem">
+                            <div class="bg-secondary progress-bar progress-bar-striped progress-bar-animated px-2 justify-content-between align-items-center flex-row" role="progressbar" aria-label="Default striped example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <span class="text-uppercase fw-semibold">html</span>
+                                <span class="fw-bold">80%</span>
+                            </div>
+                        </div>
+                        <div class="progress mb-xl-3 mb-lg-4 mb-md-3 mb-2" style="height: 1.5rem">
+                            <div class="bg-secondary progress-bar progress-bar-striped progress-bar-animated px-2 justify-content-between align-items-center flex-row" role="progressbar" aria-label="Default striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <span class="text-uppercase fw-semibold">css</span>
+                                <span class="fw-bold">75%</span>
+                            </div>
+                        </div>
+                        <div class="progress mb-xl-3 mb-lg-4 mb-md-3 mb-2" style="height: 1.5rem">
+                            <div class="bg-secondary progress-bar progress-bar-striped progress-bar-animated px-2 justify-content-between align-items-center flex-row" role="progressbar" aria-label="Default striped example" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                <span class="text-uppercase fw-semibold">javascript</span>
+                                <span class="fw-bold">40%</span>
+                            </div>
+                        </div>
+                        <div class="progress mb-xl-3 mb-lg-4 mb-md-3 mb-2" style="height: 1.5rem">
+                            <div class="bg-secondary progress-bar progress-bar-striped progress-bar-animated px-2 justify-content-between align-items-center flex-row" role="progressbar" aria-label="Default striped example" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <span class="text-uppercase fw-semibold">sass - less</span>
+                                <span class="fw-bold">70%</span>
+                            </div>
+                        </div>
+                        <div class="progress mb-xl-3 mb-lg-4 mb-md-3 mb-2" style="height: 1.5rem">
+                            <div class="bg-secondary progress-bar progress-bar-striped progress-bar-animated px-2 justify-content-between align-items-center flex-row" role="progressbar" aria-label="Default striped example" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                <span class="text-uppercase fw-semibold">react js</span>
+                                <span class="fw-bold">40%</span>
+                            </div>
+                        </div>
+                        <div class="progress mb-xl-3 mb-lg-4 mb-md-3 mb-2" style="height: 1.5rem">
+                            <div class="bg-secondary progress-bar progress-bar-striped progress-bar-animated px-2 justify-content-between align-items-center flex-row" role="progressbar" aria-label="Default striped example" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <span class="text-uppercase fw-semibold">bootstrap</span>
+                                <span class="fw-bold">70%</span>
+                            </div>
+                        </div>
+                        <div class="progress" style="height: 1.5rem">
+                            <div class="bg-secondary progress-bar progress-bar-striped progress-bar-animated px-2 justify-content-between align-items-center flex-row" role="progressbar" aria-label="Default striped example" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                <span class="text-uppercase fw-semibold">tailwindcss</span>
+                                <span class="fw-bold">40%</span>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section id="portfolio" class="bg-secondary py-5">
+            <section class="container text-white">
+                <h2 class="py-5 text-capitalize fw-normal d-flex align-items-center justify-content-center mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-brush me-3" viewBox="0 0 16 16">
+                        <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
+                    </svg>
+                    my works
+                </h2>
+
+                <section class="row">
+                    <section class="pt-5 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card overflow-hidden w-100 sp-class-shadow--about-image">
+                            <img src="./assets/images/portfolio/taco.ge.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <a href="https://geo-taco.netlify.app" target="_blank" class="btn btn-secondary">View full website</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pt-5 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card overflow-hidden w-100 sp-class-shadow--about-image">
+                            <img src="./assets/images/portfolio/stikers.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <a href="https://geo-stikers.netlify.app/" target="_blank" class="btn btn-secondary">View full website</a>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="pt-5 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card overflow-hidden w-100 sp-class-shadow--about-image">
+                            <img src="./assets/images/portfolio/cars.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <a href="https://geo-cars.netlify.app/" target="_blank" class="btn btn-secondary">View full website</a>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="pt-5 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card overflow-hidden w-100 sp-class-shadow--about-image">
+                            <img src="./assets/images/portfolio/studio.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <a href="https://geo-istudio.netlify.app/" target="_blank" class="btn btn-secondary">View full website</a>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="pt-5 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card overflow-hidden w-100 sp-class-shadow--about-image">
+                            <img src="./assets/images/portfolio/auto.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <a href="https://geo-geolab-auto.netlify.app/" target="_blank" class="btn btn-secondary">View full website</a>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="pt-5 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card overflow-hidden w-100 sp-class-shadow--about-image">
+                            <img src="./assets/images/portfolio/port-od.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <a href="https://geo-justinfo.netlify.app/" target="_blank" class="btn btn-secondary">View full website</a>
+                            </div>
+                          </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="bg-dark py-5" id="contact">
+            <section class="container text-white">
+                <h2 class="py-5 text-capitalize fw-normal d-flex align-items-center justify-content-center mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope me-3" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg>
+                    Contact me
+                </h2>
+                <section class="row">
+
+                    <section class="col-xl-4 col-lg-3 col-md-3"></section>
+
+                    <section class="col-xl-4 col-lg-6 col-md-6">
+                        <p class="fs-5">
+                            In case if you have  some question or suggestion,
+                        </p>
+                        <p class="fs-5">
+                            please write me on this email address:
+                        </p>
+                        <address class="mb-0 mt-5 text-center bg-secondary rounded-1 py-2">
+                            <a class="fs-6 text-white" href="mailto: aleksisvaridze@outlook.com">aleksisvaridze@outlook.com</a>
+                        </address>
+                    </section>
+
+                    <section class="col-xl-4 col-lg-3 col-md-3"></section>
+                </section>
+            </section>
+        </section>
+
+        <footer class="py-4 bg-secondary"></footer>
+        <script src="./assets/js/scripts.js"></script>
+    </body>
+</html>
