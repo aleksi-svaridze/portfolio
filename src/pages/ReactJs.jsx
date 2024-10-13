@@ -10,12 +10,16 @@ import FaqImage from "../images/cards/react-cards/questios.png";
 import QrImage from "../images/cards/react-cards/qrcode.png";
 import WorkItImage from "../images/cards/react-cards/workit.png";
 import TypeMasterImage from "../images/cards/react-cards/typemaster.png";
+import NftImage from "../images/cards/react-cards/nft.png";
+import LinkedinImage from "../images/cards/react-cards/linkedin.png";
+import BandageImage from "../images/cards/react-cards/bandage.png";
+import TravlogImage from "../images/cards/react-cards/travlog.png";
 
 import WebDesign from "../images/categories/web_design.jpg";
 import GraphicDesign from "../images/categories/graphic_design.jpg";
 
 export const ReactJs = () => {
-  const [appDesignCardsContent] = useState([
+  const [reactJsCardContent] = useState([
     {
       id: 1,
       imageSrc: BlogImage,
@@ -81,6 +85,38 @@ export const ReactJs = () => {
       liveUrl: "https://typemaster-app.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/typemaster",
     },
+    {
+      id: 9,
+      imageSrc: NftImage,
+      title: "nft marketplace",
+      description: "marketplace ...",
+      liveUrl: "https://marketplace-nft-react.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/react-ntf",
+    },
+    {
+      id: 10,
+      imageSrc: LinkedinImage,
+      title: "linkedin",
+      description: "linkedin ...",
+      liveUrl: "https://linked-in-js.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/linkedin",
+    },
+    {
+      id: 11,
+      imageSrc: BandageImage,
+      title: "bandage",
+      description: "bandage ...",
+      liveUrl: "https://bandage-react.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/bandage",
+    },
+    {
+      id: 12,
+      imageSrc: TravlogImage,
+      title: "Travlog",
+      description: "Travlog ...",
+      liveUrl: "https://travelog-react.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/travlog",
+    },
   ]);
   return (
     <div className="md:container md:px-10 xl:px-[85px]">
@@ -91,7 +127,7 @@ export const ReactJs = () => {
         }
       />
       <div className="container py-24 md:py-[120px] lg:py-[160px] px-6 md:px-0 grid lg:grid-cols-3 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
-        {appDesignCardsContent.map((item) => (
+        {reactJsCardContent.map((item) => (
           <DesignCards item={item} />
         ))}
       </div>

@@ -2,58 +2,56 @@ import { useState } from "react";
 import { CategoriesCard, DesignCards } from "../components/Cards";
 import { SecondaryHero } from "../components/Heroes";
 
-import imageExpress from "../images/cards/web-design-cards/express.jpg";
-import imageTransfer from "../images/cards/web-design-cards/transfer.jpg";
-import imagePhoton from "../images/cards/web-design-cards/photon.jpg";
-import imageBuilder from "../images/cards/web-design-cards/builder.jpg";
-import imageBlogr from "../images/cards/web-design-cards/blogr.jpg";
-import imageCamp from "../images/cards/web-design-cards/camp.jpg";
+import IstudioImage from "../images/cards/javascript-cards/istudio.png";
+import VerbsImage from "../images/cards/javascript-cards/verbs.png";
+import MasonryImage from "../images/cards/javascript-cards/masonry.png";
+import StickersImage from "../images/cards/javascript-cards/stickers.png";
+import MexicanImage from "../images/cards/javascript-cards/mexican.png";
 
 import AppDesign from "../images/categories/app_design.jpg";
 import GraphicDesign from "../images/categories/graphic_design.jpg";
 
 export const Javascript = () => {
-  const [webDesignCardsContent] = useState([
+  const [javascriptCardsContent] = useState([
     {
       id: 1,
-      imageSrc: imageExpress,
-      title: "express",
-      description: "A multi-carrier shipping website for ecommerce businesses",
+      imageSrc: IstudioImage,
+      title: "Istudio",
+      description: "istudio ...",
+      liveUrl: "https://istudio-js.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/istudio",
     },
     {
       id: 2,
-      imageSrc: imageTransfer,
-      title: "transfer",
-      description:
-        "Site for low-cost money transfers and sending money within seconds",
+      imageSrc: VerbsImage,
+      title: "Irregular verbs",
+      description: "Irregular verbs ...",
+      liveUrl: "https://verbs-js.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/irregular-verbs",
     },
     {
       id: 3,
-      imageSrc: imagePhoton,
-      title: "photon",
-      description:
-        "A state-of-the-art music player with high-resolution audio and DSP effects",
+      imageSrc: MasonryImage,
+      title: "Masonry style",
+      description: "Masonry ...",
+      liveUrl: "https://masonry-js.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/geo-masonry",
     },
     {
       id: 4,
-      imageSrc: imageBuilder,
-      title: "builder",
-      description:
-        "Connects users with local contractors based on their location",
+      imageSrc: StickersImage,
+      title: "Stickers",
+      description: "Stickers ...",
+      liveUrl: "https://stickers-js.netlify.app",
+      gitUrl: "https://github.com/aleksi-svaridze/geo-masonry",
     },
     {
       id: 5,
-      imageSrc: imageBlogr,
-      title: "blogr",
-      description:
-        "Blogr is a platform for creating an online blog or publication",
-    },
-    {
-      id: 6,
-      imageSrc: imageCamp,
-      title: "camp",
-      description:
-        "Get expert training in coding, data, design, and digital marketing",
+      imageSrc: MexicanImage,
+      title: "mexican mune",
+      description: "mexican menu ...",
+      liveUrl: "https://mexican-js.netlify.app",
+      gitUrl: "https://github.com/aleksi-svaridze/geo-mexican",
     },
   ]);
   return (
@@ -64,7 +62,7 @@ export const Javascript = () => {
           memorable brand experiences."
       />
       <div className="container py-24 md:py-[120px] lg:py-[160px] px-6 md:px-0 grid lg:grid-cols-3 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
-        {webDesignCardsContent.map((item) => (
+        {javascriptCardsContent.map((item) => (
           <DesignCards item={item} />
         ))}
       </div>
