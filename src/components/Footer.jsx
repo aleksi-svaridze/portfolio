@@ -42,13 +42,6 @@ export const Footer = () => {
             </NavLink>
             <NavLink
               onClick={scrollToTop}
-              to="locations"
-              className={({ isActive }) => isActive && "border-b border-white"}
-            >
-              locations
-            </NavLink>
-            <NavLink
-              onClick={scrollToTop}
               to="contact"
               className={({ isActive }) => isActive && "border-b border-white"}
             >

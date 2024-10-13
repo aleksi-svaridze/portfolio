@@ -6,7 +6,11 @@ import scrollToTop from "../functions";
 
 export const DesignCards = ({ item }) => {
   return (
-    <div className="rounded-[15px] overflow-hidden md:flex lg:block md:h-[310px] lg:h-auto group cursor-pointer shadow-lg">
+    <Link
+      to={item.liveUrl}
+      target="_blank"
+      className="rounded-[15px] overflow-hidden md:flex lg:block md:h-[310px] lg:h-auto group cursor-pointer shadow-lg"
+    >
       <div
         className="bg-top bg-cover bg-no-repeat min-h-80 md:min-h-[310px] lg:min-h-80 md:w-[338px] lg:w-full"
         style={{ backgroundImage: `url(${item.imageSrc})` }}
@@ -20,7 +24,7 @@ export const DesignCards = ({ item }) => {
           {item.description}
         </p>
       </section>
-    </div>
+    </Link>
   );
 };
 
