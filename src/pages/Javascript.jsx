@@ -8,8 +8,8 @@ import MasonryImage from "../images/cards/javascript-cards/masonry.png";
 import StickersImage from "../images/cards/javascript-cards/stickers.png";
 import MexicanImage from "../images/cards/javascript-cards/mexican.png";
 
-import AppDesign from "../images/categories/app_design.jpg";
-import GraphicDesign from "../images/categories/graphic_design.jpg";
+import ReactImage from "../images/categories/react-framework-logo.webp";
+import AngularImage from "../images/categories/Angular_gradient.png";
 
 export const Javascript = () => {
   const [javascriptCardsContent] = useState([
@@ -68,13 +68,13 @@ export const Javascript = () => {
       <div className="container px-6 md:px-0 grid lg:grid-cols-2 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
         <CategoriesCard
           url="reactjs"
-          img={AppDesign}
+          img={ReactImage}
           title="react js"
           lgHeight="lg:h-[308px]"
         />
         <CategoriesCard
           url="angularjs"
-          img={GraphicDesign}
+          img={AngularImage}
           title="angular js"
           lgHeight="lg:h-[308px]"
         />

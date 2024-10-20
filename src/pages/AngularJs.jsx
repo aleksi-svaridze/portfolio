@@ -6,8 +6,8 @@ import BrownImage from "../images/cards/graphic-design-cards/brown.jpg";
 import WaterImage from "../images/cards/graphic-design-cards/water.jpg";
 import ScienceImage from "../images/cards/graphic-design-cards/science.jpg";
 
-import AppDesign from "../images/categories/app_design.jpg";
-import WebDesign from "../images/categories/web_design.jpg";
+import ReactImage from "../images/categories/react-framework-logo.webp";
+import JavascriptImage from "../images/categories/javascript-736401_1280.png";
 
 export const AngularJs = () => {
   const [graphicDesignCardsContent] = useState([
@@ -48,13 +48,13 @@ export const AngularJs = () => {
       <div className="container px-6 md:px-0 grid lg:grid-cols-2 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
         <CategoriesCard
           url="reactjs"
-          img={AppDesign}
+          img={ReactImage}
           title="react js"
           lgHeight="lg:h-[308px]"
         />
         <CategoriesCard
           url="javascript"
-          img={WebDesign}
+          img={JavascriptImage}
           title="javascript"
           lgHeight="lg:h-[308px]"
         />

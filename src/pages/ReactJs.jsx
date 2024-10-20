@@ -15,8 +15,8 @@ import LinkedinImage from "../images/cards/react-cards/linkedin.png";
 import BandageImage from "../images/cards/react-cards/bandage.png";
 import TravlogImage from "../images/cards/react-cards/travlog.png";
 
-import WebDesign from "../images/categories/web_design.jpg";
-import GraphicDesign from "../images/categories/graphic_design.jpg";
+import JavascriptImage from "../images/categories/javascript-736401_1280.png";
+import AngularImage from "../images/categories/Angular_gradient.png";
 
 export const ReactJs = () => {
   const [reactJsCardContent] = useState([
@@ -134,13 +134,13 @@ export const ReactJs = () => {
       <div className="container px-6 md:px-0 grid lg:grid-cols-2 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
         <CategoriesCard
           url="javascript"
-          img={WebDesign}
+          img={JavascriptImage}
           title="javascript"
           lgHeight="lg:h-[308px]"
         />
         <CategoriesCard
           url="angularjs"
-          img={GraphicDesign}
+          img={AngularImage}
           title="angular js"
           lgHeight="lg:h-[308px]"
         />

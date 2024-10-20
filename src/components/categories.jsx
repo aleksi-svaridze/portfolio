@@ -1,6 +1,6 @@
-import AppDesign from "../images/categories/app_design.jpg";
-import WebDesign from "../images/categories/web_design.jpg";
-import GraphicDesign from "../images/categories/graphic_design.jpg";
+import ReactImage from "../images/categories/react-framework-logo.webp";
+import JavascriptImage from "../images/categories/javascript-736401_1280.png";
+import AngularImage from "../images/categories/Angular_gradient.png";
 import { CategoriesCard } from "./Cards";
 
 export const Categories = () => {
@@ -8,7 +8,7 @@ export const Categories = () => {
     <div className="container my-[120px] lg:my-40 grid lg:grid-cols-2 gap-y-6 lg:gap-x-7 px-6 md:px-0">
       <CategoriesCard
         url="javascript"
-        img={WebDesign}
+        img={JavascriptImage}
         title="javascript"
         lgHeight="lg:h-[640px]"
       />
@@ -16,14 +16,14 @@ export const Categories = () => {
       <div className="grid gap-y-6">
         <CategoriesCard
           url="reactjs"
-          img={AppDesign}
+          img={ReactImage}
           title="react js"
           lgHeight="lg:h-[308px]"
         />
 
         <CategoriesCard
           url="angularjs"
-          img={GraphicDesign}
+          img={AngularImage}
           title="angular js"
           lgHeight="lg:h-[308px]"
         />

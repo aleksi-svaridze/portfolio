@@ -26,7 +26,7 @@ export const Header = () => {
         <Link to="" className="flex items-center gap-x-5">
           <img src={LogoImage} alt="" className="w-6 h-6" />
           <span className="text-2xl leading-6 tracking-[5px] uppercase font-bold font-spartan">
-            designo
+            portfolio
           </span>
         </Link>
 

@@ -27,7 +27,7 @@ export const Footer = () => {
           >
             <img src={LogoImage} alt="" className="w-6 h-6" />
             <span className="text-2xl text-white leading-6 tracking-[5px] uppercase font-bold font-spartan">
-              designo
+              portfolio
             </span>
           </Link>
 
