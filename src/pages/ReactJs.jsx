@@ -123,15 +123,15 @@ export const ReactJs = () => {
       <SecondaryHero
         title={"react js"}
         description={
-          "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
+          "React Js is a free and open-source front-end JavaScript library for building user interfaces based on components by Facebook Inc."
         }
       />
       <div className="container py-24 md:py-[120px] lg:py-[160px] px-6 md:px-0 grid lg:grid-cols-3 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
         {reactJsCardContent.map((item) => (
-          <DesignCards item={item} />
+          <DesignCards item={item} key={item.id} />
         ))}
       </div>
-      <div className="container pb-24 md:pb-[120px] lg:pb-[160px] px-6 md:px-0 grid lg:grid-cols-2 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
+      <div className="container px-6 md:px-0 grid lg:grid-cols-2 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
         <CategoriesCard
           url="javascript"
           img={WebDesign}

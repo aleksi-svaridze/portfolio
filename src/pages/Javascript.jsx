@@ -58,15 +58,14 @@ export const Javascript = () => {
     <div className="md:container md:px-10 xl:px-[85px]">
       <SecondaryHero
         title="javascript"
-        description="We build websites that serve as powerful marketing tools and bring
-          memorable brand experiences."
+        description="JavaScript is a high-level programming language that follows the ECMAScript standard and is currently the most popular programming language in use."
       />
       <div className="container py-24 md:py-[120px] lg:py-[160px] px-6 md:px-0 grid lg:grid-cols-3 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
         {javascriptCardsContent.map((item) => (
-          <DesignCards item={item} />
+          <DesignCards item={item} key={item.id} />
         ))}
       </div>
-      <div className="container pb-24 md:pb-[120px] lg:pb-[160px] px-6 md:px-0 grid lg:grid-cols-2 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
+      <div className="container px-6 md:px-0 grid lg:grid-cols-2 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
         <CategoriesCard
           url="reactjs"
           img={AppDesign}

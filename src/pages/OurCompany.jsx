@@ -57,7 +57,7 @@ export const OurCompany = () => {
 
       <div className="grid gap-y-[48px] lg:grid-cols-3 my-[60px] lg:my-[80px]">
         {locationCardData.map((item) => (
-          <CountryCard title={item.title} img={item.img} id={item.id} />
+          <CountryCard title={item.title} img={item.img} key={item.id} />
         ))}
       </div>
 

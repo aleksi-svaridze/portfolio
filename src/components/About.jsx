@@ -26,7 +26,10 @@ export const About = () => {
   return (
     <div className="container px-6 md:px-0 lg:flex lg:gap-x-[30px]">
       {aboutData.map((item) => (
-        <div className="flex flex-col md:flex-row lg:flex-col items-center justify-center md:justify-start lg:justify-center md:gap-x-12 mb-[60px] md:mb-8 lg:mb-0">
+        <div
+          className="flex flex-col md:flex-row lg:flex-col items-center justify-center md:justify-start lg:justify-center md:gap-x-12 mb-[60px] md:mb-8 lg:mb-0"
+          key={item.id}
+        >
           <img
             src={item.imgSrc}
             alt={item.title}

@@ -37,15 +37,15 @@ export const AngularJs = () => {
       <SecondaryHero
         title={"angular js"}
         description={
-          "We deliver eye-catching branding materials that are tailored to meet your business objectives."
+          "Angular is a framework of javascript and developed by Google. According to the Stack Overflow, Angular is one of the most commonly used web frameworks."
         }
       />
       <div className="container py-24 md:py-[120px] lg:py-[160px] px-6 md:px-0 grid lg:grid-cols-3 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
         {graphicDesignCardsContent.map((item) => (
-          <DesignCards item={item} />
+          <DesignCards item={item} key={item.id} />
         ))}
       </div>
-      <div className="container pb-24 md:pb-[120px] lg:pb-[160px] px-6 md:px-0 grid lg:grid-cols-2 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
+      <div className="container px-6 md:px-0 grid lg:grid-cols-2 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
         <CategoriesCard
           url="reactjs"
           img={AppDesign}

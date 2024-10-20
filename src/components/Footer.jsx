@@ -7,7 +7,6 @@ import scrollToTop from "../functions";
 export const Footer = () => {
   const location = useLocation();
 
-  console.log(location.pathname);
   return (
     <footer
       className={`${
@@ -18,7 +17,7 @@ export const Footer = () => {
     >
       <div className="container px-6 md:px-10 xl:px-[85px] relative">
         <div className="absolute -top-[440px] md:-top-[400px] lg:-top-[365px] left-0 right-0 px-6 md:px-10 xl:px-[85px]">
-          {location.pathname !== "/contact" && <FooterCard />}
+          {location.pathname !== "/contact" ? <FooterCard /> : undefined}
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <Link
@@ -36,14 +35,18 @@ export const Footer = () => {
             <NavLink
               onClick={scrollToTop}
               to="about"
-              className={({ isActive }) => isActive && "border-b border-white"}
+              className={({ isActive }) =>
+                isActive ? "border-b border-white" : undefined
+              }
             >
               our company
             </NavLink>
             <NavLink
               onClick={scrollToTop}
               to="contact"
-              className={({ isActive }) => isActive && "border-b border-white"}
+              className={({ isActive }) =>
+                isActive ? "border-b border-white" : undefined
+              }
             >
               contact
             </NavLink>

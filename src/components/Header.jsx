@@ -34,7 +34,7 @@ export const Header = () => {
           <NavLink
             to="about"
             className={({ isActive }) =>
-              isActive && "border-b border-dark-gray"
+              isActive ? "border-b border-dark-gray" : undefined
             }
           >
             our company
@@ -42,7 +42,7 @@ export const Header = () => {
           <NavLink
             to="contact"
             className={({ isActive }) =>
-              isActive && "border-b border-dark-gray"
+              isActive ? "border-b border-dark-gray" : undefined
             }
           >
             contact

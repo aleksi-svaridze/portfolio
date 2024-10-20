@@ -15,7 +15,7 @@ export const Contact = () => {
     <div className="container px-6 md:px-10 xl:px-[85px]">
       <div className="grid gap-y-[48px] lg:grid-cols-3 my-[60px] lg:my-[80px]">
         {locationCardData.map((item) => (
-          <CountryCard title={item.title} img={item.img} id={item.id} />
+          <CountryCard title={item.title} img={item.img} key={item.id} />
         ))}
       </div>
     </div>

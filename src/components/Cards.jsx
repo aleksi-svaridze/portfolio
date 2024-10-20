@@ -51,9 +51,9 @@ export const CategoriesCard = ({ url, title, img, lgHeight }) => {
   );
 };
 
-export const CountryCard = ({ img, title, id }) => {
+export const CountryCard = ({ img, title }) => {
   return (
-    <div className="flex flex-col justify-center items-center" key={id}>
+    <div className="flex flex-col justify-center items-center">
       <img src={img} alt="" className="w-[202px] h-[202px]" />
       <h3 className="text-dark-gray font-medium text-[20px] leading-[26px] uppercase mt-[48px] mb-[24px] tracking-[5px]">
         {title}
@@ -83,7 +83,7 @@ export const OurCompanyCard = ({
       )}
       <section
         className={`${bgColor} py-20 px-4 md:px-20 lg:px-24 lg:py-0 flex flex-col text-center lg:text-start lg:justify-center gap-y-6 ${
-          width < 1023 && "order-2"
+          width < 1023 ? "order-2" : undefined
         }`}
       >
         <h3 className={`font-medium text-[32px] leading-9 ${titleColor}`}>
