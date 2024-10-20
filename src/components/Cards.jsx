@@ -30,24 +30,22 @@ export const DesignCards = ({ item }) => {
 
 export const CategoriesCard = ({ url, title, img, lgHeight }) => {
   return (
-    <div
+    <Link
+      onClick={scrollToTop}
+      to={`/${url}`}
       className={`h-[250px] md:h-[200px] ${lgHeight} group bg-no-repeat bg-cover bg-center rounded-[15px]`}
       style={{ backgroundImage: `url(${img})` }}
     >
-      <section className="bg-black/60 h-full group-hover:bg-peach/60 flex flex-col items-center justify-center gap-y-6 rounded-[15px]">
+      <section className="bg-black/80 h-full group-hover:bg-peach/90 flex flex-col items-center justify-center gap-y-6 rounded-[15px]">
         <h2 className="text-white uppercase font-medium text-[28px] md:text-[40px] leading-9 md:leading-[48px] tracking-[1.4px] md:tracking-[2px] text-center">
           {title}
         </h2>
-        <Link
-          onClick={scrollToTop}
-          to={`/${url}`}
-          className="font-medium text-white text-[15px] uppercase leading-[15px] tracking-[5px] flex items-center gap-x-[22px]"
-        >
+        <div className="font-medium text-white text-[15px] uppercase leading-[15px] tracking-[5px] flex items-center gap-x-[22px]">
           view projects
           <ArrowRight />
-        </Link>
+        </div>
       </section>
-    </div>
+    </Link>
   );
 };
 
