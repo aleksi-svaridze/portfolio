@@ -1,26 +1,26 @@
-import Passionate from "../images/about/passionate.png";
-import Resourceful from "../images/about/resourceful.png";
-import Friendly from "../images/about/friendly.png";
+import { DiJavascript, DiCss3, DiHtml5 } from "react-icons/di";
 
 export const About = () => {
   const aboutData = [
     {
       id: 1,
-      imgSrc: Passionate,
-      title: "PASSIONATE",
-      desc: "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.",
+      imgSrc: <DiHtml5 className="w-[202px] h-[202px] shrink-0 text-peach" />,
+      title: "html",
+      desc: "HTML (HyperText Markup Language) is the standard language for creating web pages. It defines the structure of web content using elements like text, images, links, and forms displayed in browsers",
     },
     {
       id: 2,
-      imgSrc: Resourceful,
-      title: "RESOURCEFUL",
-      desc: "Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs.",
+      imgSrc: <DiCss3 className="w-[202px] h-[202px] shrink-0 text-peach" />,
+      title: "css",
+      desc: "(Cascading Style Sheets) is a language used to describe the presentation of web pages, including layout, colors, and fonts. It controls how HTML elements are displayed across devices",
     },
     {
       id: 3,
-      imgSrc: Friendly,
-      title: "FRIENDLY",
-      desc: " We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.",
+      imgSrc: (
+        <DiJavascript className="w-[202px] h-[202px] shrink-0 text-peach" />
+      ),
+      title: "javascript",
+      desc: "JavaScript is a versatile, lightweight programming language used to create dynamic web content. It supports multiple paradigms and works across platforms, powering websites and applications with interactive features",
     },
   ];
   return (
@@ -30,11 +30,8 @@ export const About = () => {
           className="flex flex-col md:flex-row lg:flex-col items-center justify-center md:justify-start lg:justify-center md:gap-x-12 mb-[60px] md:mb-8 lg:mb-0"
           key={item.id}
         >
-          <img
-            src={item.imgSrc}
-            alt={item.title}
-            className="w-[202px] h-[202px]"
-          />
+          {item.imgSrc}
+
           <section className="text-center md:text-start lg:text-center">
             <h2 className="font-medium text-[20px] leading-[26px] uppercase tracking-[5px] mt-11 md:mt-0 lg:mt-12 mb-8 md:mb-[15px] lg:mb-8">
               {item.title}

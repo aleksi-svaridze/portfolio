@@ -1,7 +1,6 @@
 import PrimaryHeroImg from "../images/hero_images/primaryHeroImg.png";
 import PrimaryHeroImgMobile from "../images/hero_images/primaryHeroImgMobile.png";
 import { useWindowSize } from "@uidotdev/usehooks";
-import { ButtonWhite } from "./Btns";
 
 export const PrimaryHero = () => {
   const { width } = useWindowSize();
@@ -12,15 +11,15 @@ export const PrimaryHero = () => {
 
       <div className="lg:flex h-full lg:items-center">
         <section className="relative z-10 flex flex-col items-center justify-center lg:block text-center lg:text-left">
-          <h1 className="text-[32px] leading-9 md:text-5xl font-medium text-white max-w-[415px] md:max-w-[573px] lg:w-[540px]">
-            Award-winning custom designs and digital branding solutions
+          <h1 className="text-[32px] leading-9 md:text-5xl font-medium text-white max-w-[415px] md:max-w-[573px] lg:w-[540px] capitalize">
+            junior-middle front-end developer portfolio
           </h1>
           <p className="text-[15px] md:text-base leading-[25px] md:leading-[26px] text-white mt-6 md:mt-8 lg:mt-8 mb-4 min-[375px]:mb-7 md:mb-5 lg:mb-10 max-w-[415px] md:max-w-[460px] lg:w-[440px]">
-            With over 10 years in the industry, we are experienced in creating
-            fully responsive websites, app design, and engaging brand
-            experiences. Find out more about our services.
+            With over 3 years in freelancing and 2 years in a particular
+            company, I am experienced in creating fully responsive websites and
+            various types in web technology. Scroll down for more about my
+            projects.
           </p>
-          <ButtonWhite title="Learn More" />
         </section>
         {width >= 1024 ? (
           <img
