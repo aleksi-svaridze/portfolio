@@ -1,22 +1,47 @@
-import { CountryCard } from "../components/Cards";
+// import { useState } from "react";
 
-import CanadaImage from "../images/cards/location-cards/canada.png";
-import AustraliaImage from "../images/cards/location-cards/australia.png";
-import UkImage from "../images/cards/location-cards/united-kingdom.png";
-import { useState } from "react";
+import { ButtonWhite } from "../components/Btns";
 
 export const Contact = () => {
-  const [locationCardData] = useState([
-    { id: 1, title: "canada", img: CanadaImage },
-    { id: 2, title: "australia", img: AustraliaImage },
-    { id: 3, title: "united kingdom", img: UkImage },
-  ]);
   return (
-    <div className="container px-6 md:px-10 xl:px-[85px]">
-      <div className="grid gap-y-[48px] lg:grid-cols-3 my-[60px] lg:my-[80px]">
-        {locationCardData.map((item) => (
-          <CountryCard title={item.title} img={item.img} key={item.id} />
-        ))}
+    <div className="md:container md:px-10 xl:px-[85px]">
+      <div
+        className={`grid lg:grid-cols-2 md:rounded-[15px] py-12 md:py-16 bg-peach`}
+      >
+        <section className="pb-20 text-white px-4 md:px-20 lg:pl-20 lg:pr-16 lg:py-0 flex flex-col text-center md:text-start lg:justify-center gap-y-6">
+          <h3 className={`font-medium text-[32px] leading-9 capitalize`}>
+            contact me
+          </h3>
+          <p className={`text-[15px] leading-[25px]`}>
+            Ready to take it to the next level? Let's talk about your project or
+            idea and find out how we can help your business grow. If you are
+            looking for unique digital experiences that's relatable to your
+            users, drop us a line.
+          </p>
+        </section>
+        <form className="flex flex-col px-4 md:px-20 lg:pl-0">
+          <input
+            type="text"
+            placeholder="name"
+            className="h-10 mb-6 bg-peach text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            className="h-10 mb-6 bg-peach text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
+          />
+          <input
+            type="number"
+            placeholder="Phone"
+            className="h-10 mb-6 bg-peach text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
+          />
+          <textarea
+            placeholder="your message"
+            className="h-20 mb-6 bg-peach text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
+          ></textarea>
+
+          <ButtonWhite title="submit" customStyle="self-center md:self-end" />
+        </form>
       </div>
     </div>
   );
