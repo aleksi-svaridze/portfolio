@@ -2,11 +2,22 @@ import { useState } from "react";
 import { CategoriesCard, DesignCards } from "../components/Cards";
 import { SecondaryHero } from "../components/Heroes";
 
+import WorkItImage from "../images/cards/react-cards/workit.png";
+
 import ReactImage from "../images/categories/react-framework-logo.webp";
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
 
 export const AngularJs = () => {
-  const [angularCardsContent] = useState();
+  const [angularCardsContent] = useState([
+    {
+      id: 1,
+      imageSrc: WorkItImage,
+      title: "work it",
+      description: "Angular Js, Css, BEM",
+      liveUrl: "https://stunning-fenglisu-ff6366.netlify.app/",
+      gitUrl: "",
+    },
+  ]);
   return (
     <div className="md:container md:px-10 xl:px-[85px]">
       <SecondaryHero

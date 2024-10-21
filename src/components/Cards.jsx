@@ -21,7 +21,9 @@ export const DesignCards = ({ item }) => {
         </p>
         <div className="w-full h-full absolute top-0 left-0 right-0 bottom-0 hidden group-hover:flex flex-col justify-center items-center gap-y-3">
           <ButtonWhite title={"template"} blank={true} url={item.liveUrl} />
-          <ButtonWhite title={"github"} blank={true} url={item.gitUrl} />
+          {item.gitUrl !== "" ? (
+            <ButtonWhite title={"github"} blank={true} url={item.gitUrl} />
+          ) : undefined}
         </div>
       </section>
     </div>
