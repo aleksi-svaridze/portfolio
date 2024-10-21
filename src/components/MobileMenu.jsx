@@ -10,7 +10,7 @@ const MobileMenu = ({ setShowMenu }) => {
             onClick={() => setShowMenu(false)}
             className="text-2xl leading-[25px] tracking-[2px] uppercase"
           >
-            our company
+            about
           </Link>
           <Link
             to="contact"

@@ -159,8 +159,8 @@ export const FooterCard = () => {
           your project
         </h2>
         <p className="text-white text-[15px] md:text-base leading-[25px] md:leading-[26px]">
-          Ready to take it to the next level? Contact us today and find out how
-          our expertise can help your business grow.
+          Ready to take it to the next level? Contact me today and find out how
+          my experience can help your business grow.
         </p>
       </section>
       <ButtonWhite title={"get in touch"} url="/contact" />

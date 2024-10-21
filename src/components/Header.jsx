@@ -37,7 +37,7 @@ export const Header = () => {
               isActive ? "border-b border-dark-gray" : undefined
             }
           >
-            our company
+            about
           </NavLink>
           <NavLink
             to="contact"

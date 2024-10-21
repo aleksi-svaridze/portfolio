@@ -39,7 +39,7 @@ export const Footer = () => {
                 isActive ? "border-b border-white" : undefined
               }
             >
-              our company
+              about
             </NavLink>
             <NavLink
               onClick={scrollToTop}

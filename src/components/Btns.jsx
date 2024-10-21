@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import scrollToTop from "../functions";
 
-export const ButtonPeach = ({ title, url, blank }) => {
+export const ButtonPeach = ({ title, url, blank, customStyle }) => {
   return (
     <Link
       to={url}
       target={blank ? "_blank" : undefined}
       onClick={blank ? undefined : scrollToTop}
-      className="text-white hover:bg-light-peach h-14 rounded-lg bg-peach text-[15px] font-medium uppercase tracking-[1px] px-6 inline-flex items-center justify-center min-w-[152px]"
+      className={`text-white hover:bg-light-peach h-14 rounded-lg bg-peach text-[15px] font-medium uppercase tracking-[1px] px-6 inline-flex items-center justify-center min-w-[152px] ${customStyle}`}
     >
       {title}
     </Link>

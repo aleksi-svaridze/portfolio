@@ -21,7 +21,6 @@ export const OurCompany = () => {
           img={width > 1023 ? AboutImageDesktop : AboutImageMobile}
           title="About me"
           description_1="Hello, I am a junior front-end developer. I have studied HTML / CSS / SCSS / LESS / BOOTSTRAP / TAILWINDCSS / JS / REACTJS from Udemy and various courses, like Geolab.edu.ge and academy.dk.ge. But my main experience was working with Lupi.ge group, where we have built TVSCHOOL.GE from scratch. Now I am Building projects on my own which are presented in this site. I am currently in the process of learning Angular js."
-          description_2={`I have created this portfolio site using ReactJs, which also contains several projects I have created. Here you can visit project's live templates and github repositories as well. If you are happy with my experience, feel free to contact me.`}
           orderDirection="order-1"
           bgColor={"bg-peach"}
           titleColor={"text-white"}

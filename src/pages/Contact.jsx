@@ -13,10 +13,10 @@ export const Contact = () => {
             contact me
           </h3>
           <p className={`text-[15px] leading-[25px]`}>
-            Ready to take it to the next level? Let's talk about your project or
-            idea and find out how we can help your business grow. If you are
-            looking for unique digital experiences that's relatable to your
-            users, drop us a line.
+            I have created this portfolio site using ReactJs, which also
+            contains several projects I have created. Here you can visit
+            project's live templates and github repositories as well. If you are
+            happy with my experience, feel free to contact me.
           </p>
         </section>
         <form className="flex flex-col px-4 md:px-20 lg:pl-0">
