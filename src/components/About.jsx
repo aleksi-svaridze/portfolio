@@ -4,23 +4,27 @@ export const About = () => {
   const aboutData = [
     {
       id: 1,
-      imgSrc: <DiHtml5 className="w-[202px] h-[202px] shrink-0 text-peach" />,
+      imgSrc: (
+        <DiHtml5 className="w-[202px] h-[202px] shrink-0 text-[#f16524]" />
+      ),
       title: "html",
-      desc: "HTML (HyperText Markup Language) is the standard language for creating web pages. It defines the structure of web content using elements like text, images, links, and forms displayed in browsers",
+      desc: "Html (HyperText Markup Language) is the standard language for creating web pages. It defines the structure of web content using elements like text, images, links, and forms displayed in browsers",
     },
     {
       id: 2,
-      imgSrc: <DiCss3 className="w-[202px] h-[202px] shrink-0 text-peach" />,
+      imgSrc: (
+        <DiCss3 className="w-[202px] h-[202px] shrink-0 text-[#2465f1]" />
+      ),
       title: "css",
-      desc: "(Cascading Style Sheets) is a language used to describe the presentation of web pages, including layout, colors, and fonts. It controls how HTML elements are displayed across devices",
+      desc: "Css (Cascading Style Sheets) is a language used to describe the presentation of web pages, including layout, colors, and fonts. It controls how HTML elements are displayed across devices",
     },
     {
       id: 3,
       imgSrc: (
-        <DiJavascript className="w-[202px] h-[202px] shrink-0 text-peach" />
+        <DiJavascript className="w-[202px] h-[202px] shrink-0 text-[#ffda3e]" />
       ),
       title: "javascript",
-      desc: "JavaScript is a versatile, lightweight programming language used to create dynamic web content. It supports multiple paradigms and works across platforms, powering websites and applications with interactive features",
+      desc: "Javascript is a versatile, lightweight programming language used to create dynamic web content. It supports multiple paradigms and works across platforms, powering websites and applications with interactive features",
     },
   ];
   return (

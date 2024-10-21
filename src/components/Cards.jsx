@@ -84,7 +84,9 @@ export const OurCompanyCard = ({
           width < 1023 ? "order-2" : undefined
         }`}
       >
-        <h3 className={`font-medium text-[32px] leading-9 ${titleColor}`}>
+        <h3
+          className={`font-medium text-[32px] leading-9 ${titleColor} capitalize`}
+        >
           {title}
         </h3>
         <p className={`text-[15px] leading-[25px] ${descriptionColor}`}>

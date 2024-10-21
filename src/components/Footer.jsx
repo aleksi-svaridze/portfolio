@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import LogoImage from "../images/logo.png";
-import { Facebook, Youtube, X, Pinterest, Instagram } from "../images/svgs";
+// import { Facebook, Youtube, X, Pinterest, Instagram } from "../images/svgs";
 import { FooterCard } from "./Cards";
 import scrollToTop from "../functions";
 
@@ -53,9 +53,9 @@ export const Footer = () => {
           </nav>
         </div>
 
-        <div className="hidden md:block h-[1px] bg-white/10 mt-10 mb-8"></div>
+        {/* <div className="hidden md:block h-[1px] bg-white/10 mt-10 mb-8"></div> */}
 
-        <div className="grid md:grid-cols-3 mt-10 md:mt-0 gap-y-10 md:gap-x-5 text-center text-white/50 md:text-left">
+        {/* <div className="grid md:grid-cols-3 mt-10 md:mt-0 gap-y-10 md:gap-x-5 text-center text-white/50 md:text-left">
           <div className="">
             <h3 className="font-bold text-base leading-[26px] capitalize">
               Designo Central office
@@ -97,7 +97,7 @@ export const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
