@@ -6,25 +6,25 @@ import scrollToTop from "../functions";
 
 export const DesignCards = ({ item }) => {
   return (
-    <Link
-      to={item.liveUrl}
-      target="_blank"
-      className="rounded-[15px] overflow-hidden md:flex lg:block md:h-[310px] lg:h-auto group cursor-pointer shadow-lg"
-    >
+    <div className="rounded-[15px] overflow-hidden md:flex lg:block md:h-[310px] lg:h-auto group shadow-lg">
       <div
         className="bg-top bg-cover bg-no-repeat min-h-80 md:min-h-[310px] lg:min-h-80 md:w-[338px] lg:w-full"
         style={{ backgroundImage: `url(${item.imageSrc})` }}
       ></div>
 
-      <section className="h-40 md:h-auto md:w-[351px] lg:h-40 lg:w-full text-center flex flex-col gap-y-4 justify-center bg-[#fdf3f0] group-hover:bg-peach">
-        <h2 className="font-medium text-xl leading-[26px] tracking-[5px] uppercase text-peach group-hover:text-white">
+      <section className="h-40 md:h-auto md:w-[351px] lg:h-40 lg:w-full text-center flex flex-col gap-y-4 justify-center bg-[#fdf3f0] group-hover:bg-peach relative">
+        <h2 className="font-medium text-xl leading-[26px] tracking-[5px] uppercase text-peach group-hover:hidden">
           {item.title}
         </h2>
-        <p className="text-base leading-[26px] text-dark-gray group-hover:text-white">
+        <p className="text-base leading-[26px] text-dark-gray group-hover:hidden">
           {item.description}
         </p>
+        <div className="w-full h-full absolute top-0 left-0 right-0 bottom-0 hidden group-hover:flex flex-col justify-center items-center gap-y-3">
+          <ButtonWhite title={"template"} blank={true} url={item.liveUrl} />
+          <ButtonWhite title={"github"} blank={true} url={item.gitUrl} />
+        </div>
       </section>
-    </Link>
+    </div>
   );
 };
 

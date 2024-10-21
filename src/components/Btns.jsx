@@ -13,11 +13,12 @@ export const ButtonPeach = ({ title, url }) => {
   );
 };
 
-export const ButtonWhite = ({ title, url }) => {
+export const ButtonWhite = ({ title, url, blank }) => {
   return (
     <Link
       to={url}
-      onClick={scrollToTop}
+      target={blank ? "_blank" : undefined}
+      onClick={blank ? undefined : scrollToTop}
       className="hover:text-white hover:bg-light-peach h-14 rounded-lg bg-white text-[15px] font-medium uppercase tracking-[1px]  inline-flex items-center justify-center px-6 min-w-[152px]"
     >
       {title}
