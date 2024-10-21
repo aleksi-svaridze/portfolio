@@ -6,7 +6,7 @@ export const Contact = () => {
   return (
     <div className="md:container md:px-10 xl:px-[85px]">
       <div
-        className={`grid lg:grid-cols-2 md:rounded-[15px] py-12 md:py-16 bg-peach`}
+        className={`grid lg:grid-cols-2 md:rounded-[15px] py-12 md:py-16 bg-peach relative overflow-hidden z-0`}
       >
         <section className="pb-20 text-white px-4 md:px-20 lg:pl-20 lg:pr-16 lg:py-0 flex flex-col text-center md:text-start lg:justify-center gap-y-6">
           <h3 className={`font-medium text-[32px] leading-9 capitalize`}>
@@ -23,25 +23,26 @@ export const Contact = () => {
           <input
             type="text"
             placeholder="name"
-            className="h-10 mb-6 bg-peach text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
+            className="h-10 mb-6 bg-transparent text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
           />
           <input
             type="email"
             placeholder="Email Address"
-            className="h-10 mb-6 bg-peach text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
+            className="h-10 mb-6 bg-transparent text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
           />
           <input
             type="number"
             placeholder="Phone"
-            className="h-10 mb-6 bg-peach text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
+            className="h-10 mb-6 bg-transparent text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
           />
           <textarea
             placeholder="your message"
-            className="h-20 mb-6 bg-peach text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
+            className="h-20 mb-6 bg-transparent text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
           ></textarea>
 
           <ButtonWhite title="submit" customStyle="self-center md:self-end" />
         </form>
+        <div className="absolute bottom-0 left-0 rounded-full w-[640px] h-[640px] bg-gradient-to-b from-[#5D0202]/0 to-[#5D0202]/15 -z-10"></div>
       </div>
     </div>
   );
