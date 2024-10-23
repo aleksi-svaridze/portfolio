@@ -14,7 +14,7 @@ export const OurCompany = () => {
         <OurCompanyCard
           img={width > 1023 ? AboutImageDesktop : AboutImageMobile}
           title="About me"
-          description_1="Hello, my name is Aleksi. I am a junior front-end developer. I have studied HTML / CSS / SCSS / LESS / BOOTSTRAP / TAILWINDCSS / JS / REACTJS from Udemy and various courses, like Geolab.edu.ge and academy.dk.ge. But my main experience was working with Lupi.ge group, where we have built TVSCHOOL.GE from scratch. Now I am Building projects on my own which are presented in this site. I am currently in the process of learning Angular js."
+          description_1="Hello, I am Aleksi. I'm a junior front-end developer. I have studied HTML / CSS / SCSS / LESS / BOOTSTRAP / TAILWINDCSS / JS / REACTJS from Udemy and various courses, like Geolab.edu.ge and academy.dk.ge. I am currently in the process of learning Angular js as well. But my main experience was working with Lupi.ge group, where we have built TVSCHOOL.GE from scratch. Some of the projects, which are presented in this site are old enough and do not describe my current level of knowledge. Of course there are many ways to rebuild them in efficient and modern way."
           orderDirection="order-1"
           bgColor={"bg-peach"}
           titleColor={"text-white"}

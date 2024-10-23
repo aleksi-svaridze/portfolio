@@ -1,8 +1,23 @@
-// import { useState } from "react";
-
-import { ButtonWhite } from "../components/Btns";
-
 export const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "836fa0f0-c363-4c28-a59d-1cf24f7111c2");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+    }
+  };
   return (
     <div className="md:container md:px-10 xl:px-[85px]">
       <div
@@ -19,28 +34,43 @@ export const Contact = () => {
             happy with my experience, feel free to contact me.
           </p>
         </section>
-        <form className="flex flex-col px-4 md:px-20 lg:pl-0">
+        <form
+          className="flex flex-col px-4 md:px-20 lg:pl-0"
+          onSubmit={onSubmit}
+        >
           <input
             type="text"
             placeholder="name"
+            required
+            name="name"
             className="h-10 mb-6 bg-transparent text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
           />
           <input
             type="email"
             placeholder="Email Address"
+            required
+            name="email"
             className="h-10 mb-6 bg-transparent text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
           />
           <input
             type="number"
             placeholder="Phone"
+            required
+            name="phone"
             className="h-10 mb-6 bg-transparent text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
           />
           <textarea
             placeholder="your message"
+            required
+            name="message"
             className="h-20 mb-6 bg-transparent text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
           ></textarea>
-
-          <ButtonWhite title="submit" customStyle="self-center md:self-end" />
+          <button
+            type="submit"
+            className={`hover:text-white hover:bg-light-peach h-14 rounded-lg bg-white text-[15px] font-medium uppercase tracking-[1px]  inline-flex items-center justify-center px-6 min-w-[152px] self-center md:self-end`}
+          >
+            send
+          </button>
         </form>
         <div className="absolute bottom-0 left-0 rounded-full w-[640px] h-[640px] bg-gradient-to-b from-[#5D0202]/0 to-[#5D0202]/15 -z-10"></div>
       </div>
