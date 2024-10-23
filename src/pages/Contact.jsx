@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 export const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -14,8 +16,19 @@ export const Contact = () => {
 
     if (data.success) {
       event.target.reset();
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully",
+        icon: "success",
+        confirmButtonText: "Ok",
+      });
     } else {
-      console.log("Error", data);
+      Swal.fire({
+        title: "Error!",
+        text: "Do you want to continue",
+        icon: "error",
+        confirmButtonText: "Cool",
+      });
     }
   };
   return (
