@@ -6,13 +6,13 @@ import scrollToTop from "../functions";
 
 export const DesignCards = ({ item }) => {
   return (
-    <div className="rounded-[15px] overflow-hidden md:flex lg:block md:h-[310px] lg:h-auto group shadow-lg">
+    <div className="rounded-[15px] overflow-hidden md:flex lg:block md:h-[310px] lg:h-auto group shadow-lg bg-[#fdf3f0] hover:bg-peach transition duration-300 easy-in-out">
       <div
         className="bg-top bg-cover bg-no-repeat min-h-80 md:min-h-[310px] lg:min-h-80 md:w-[338px] lg:w-full"
         style={{ backgroundImage: `url(${item.imageSrc})` }}
       ></div>
 
-      <section className="h-40 md:h-auto md:w-[351px] lg:h-40 lg:w-full text-center flex flex-col gap-y-4 justify-center bg-[#fdf3f0] group-hover:bg-peach relative">
+      <section className="h-40 md:h-auto md:w-[351px] lg:h-40 lg:w-full text-center flex flex-col gap-y-4 justify-center relative">
         <h2 className="font-medium text-xl leading-[26px] tracking-[5px] uppercase text-peach group-hover:hidden">
           {item.title}
         </h2>
@@ -38,7 +38,7 @@ export const CategoriesCard = ({ url, title, img, lgHeight }) => {
       className={`h-[250px] md:h-[200px] ${lgHeight} group bg-no-repeat bg-cover bg-center rounded-[15px]`}
       style={{ backgroundImage: `url(${img})` }}
     >
-      <section className="bg-black/80 h-full group-hover:bg-peach/90 flex flex-col items-center justify-center gap-y-6 rounded-[15px]">
+      <section className="bg-black/80 h-full group-hover:bg-peach/90 transition ease-in-out duration-200 flex flex-col items-center justify-center gap-y-6 rounded-[15px]">
         <h2 className="text-white uppercase font-medium text-[28px] md:text-[40px] leading-9 md:leading-[48px] tracking-[1.4px] md:tracking-[2px] text-center">
           {title}
         </h2>
