@@ -52,9 +52,10 @@ export const Contact = () => {
           onSubmit={onSubmit}
         >
           <input
-            type="text"
             placeholder="name"
+            type="text"
             required
+            id="name"
             name="name"
             className="h-10 mb-6 bg-transparent text-extra-light-peach focus:outline-none border-b-2 placeholder-extra-light-peach placeholder:text-[15px] placeholder:capitalize placeholder:leading-[26px] placeholder:font-medium"
           />
@@ -80,7 +81,7 @@ export const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className={`hover:text-white hover:bg-light-peach h-14 rounded-lg bg-white text-[15px] font-medium uppercase tracking-[1px]  inline-flex items-center justify-center px-6 min-w-[152px] self-center md:self-end`}
+            className={`hover:text-white hover:bg-light-peach h-14 rounded-lg bg-white text-[15px] font-medium uppercase tracking-[1px]  inline-flex items-center justify-center px-6 min-w-[152px] self-center md:self-end transition easy-in-out duration-200`}
           >
             send
           </button>
