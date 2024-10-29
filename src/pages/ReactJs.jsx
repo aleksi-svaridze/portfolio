@@ -15,7 +15,7 @@ import BandageImage from "../images/cards/react-cards/bandage.png";
 import TravlogImage from "../images/cards/react-cards/travlog.png";
 
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
-import AngularImage from "../images/categories/Angular_gradient.png";
+import ReactNativeImage from "../images/categories/React-icon.png";
 
 export const ReactJs = () => {
   const [reactJsCardContent] = useState([
@@ -129,9 +129,9 @@ export const ReactJs = () => {
           lgHeight="lg:h-[308px]"
         />
         <CategoriesCard
-          url="angularjs"
-          img={AngularImage}
-          title="angular js"
+          url="reactnative"
+          img={ReactNativeImage}
+          title="react native"
           lgHeight="lg:h-[308px]"
         />
       </div>

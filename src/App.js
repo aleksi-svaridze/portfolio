@@ -3,13 +3,15 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { OurCompany } from "./pages/OurCompany";
 import { Contact } from "./pages/Contact";
-import { Javascript } from "./pages/Javascript";
+
 import { NotFound } from "./pages/NotFound";
 
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+
+import { Javascript } from "./pages/Javascript";
 import { ReactJs } from "./pages/ReactJs";
-import { AngularJs } from "./pages/AngularJs";
+import { ReactNative } from "./pages/ReactNative";
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="javascript" element={<Javascript />} />
         <Route path="reactjs" element={<ReactJs />} />
-        <Route path="angularjs" element={<AngularJs />} />
+        <Route path="reactnative" element={<ReactNative />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
