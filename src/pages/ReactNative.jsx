@@ -2,8 +2,6 @@ import { useState } from "react";
 import { CategoriesCard, DesignCards } from "../components/Cards";
 import { SecondaryHero } from "../components/Heroes";
 
-import WorkItImage from "../images/cards/angular-cards/workit.png";
-
 import ReactImage from "../images/categories/react-framework-logo.webp";
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
 
