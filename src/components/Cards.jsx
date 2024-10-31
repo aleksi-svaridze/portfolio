@@ -3,14 +3,17 @@ import { ArrowRight } from "../images/svgs/index";
 import { ButtonPeach, ButtonWhite } from "./Btns";
 import { useWindowSize } from "@uidotdev/usehooks";
 import scrollToTop from "../functions";
+import InProgress from "./InProgress";
 
 export const DesignCards = ({ item }) => {
   return (
     <div className="rounded-[15px] overflow-hidden md:flex lg:block md:h-[310px] lg:h-auto group shadow-lg bg-[#fdf3f0] hover:bg-peach transition duration-300 easy-in-out">
       <div
-        className="bg-top bg-cover bg-no-repeat min-h-80 md:min-h-[310px] lg:min-h-80 md:w-[338px] lg:w-full"
+        className="bg-top bg-cover bg-no-repeat min-h-80 md:min-h-[310px] lg:min-h-80 md:w-[338px] lg:w-full relative"
         style={{ backgroundImage: `url(${item.imageSrc})` }}
-      ></div>
+      >
+        {item.progress ? <InProgress /> : undefined}
+      </div>
 
       <section className="h-40 md:h-auto md:w-[351px] lg:h-40 lg:w-full text-center flex flex-col gap-y-4 justify-center relative">
         <h2 className="font-medium text-xl leading-[26px] tracking-[5px] uppercase text-peach group-hover:hidden">

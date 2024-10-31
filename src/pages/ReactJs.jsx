@@ -13,6 +13,7 @@ import NftImage from "../images/cards/react-cards/nft.png";
 import LinkedinImage from "../images/cards/react-cards/linkedin.png";
 import BandageImage from "../images/cards/react-cards/bandage.png";
 import TravlogImage from "../images/cards/react-cards/travlog.png";
+import BmiImage from "../images/cards/react-cards/bmi-min.png";
 
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
 import ReactNativeImage from "../images/categories/React-icon.png";
@@ -106,6 +107,15 @@ export const ReactJs = () => {
       description: "React Js, Scss, Bootstrap",
       liveUrl: "https://travelog-react.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/travlog",
+    },
+    {
+      id: 12,
+      imageSrc: BmiImage,
+      title: "BMI mass index",
+      description: "React Js, TailwindCss",
+      liveUrl: "https://our-bmi.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/bmi",
+      progress: true,
     },
   ]);
   return (
