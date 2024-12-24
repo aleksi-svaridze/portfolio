@@ -31,6 +31,14 @@ export const Header = () => {
         </Link>
 
         <nav className="hidden md:flex items-start gap-x-[42px] uppercase text-sm leading-[14px] tracking-[2px]">
+        <NavLink
+            to="home"
+            className={({ isActive }) =>
+              isActive ? "border-b border-dark-gray" : undefined
+            }
+          >
+            Home
+          </NavLink>
           <NavLink
             to="about"
             className={({ isActive }) =>
