@@ -13,7 +13,7 @@ import NftImage from "../images/cards/react-cards/nft.png";
 import LinkedinImage from "../images/cards/react-cards/linkedin.png";
 import BandageImage from "../images/cards/react-cards/bandage.png";
 import TravlogImage from "../images/cards/react-cards/travlog.png";
-import BmiImage from "../images/cards/react-cards/bmi-min.png";
+import BmiImage from "../images/cards/react-cards/bmi.png";
 
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
 import ReactNativeImage from "../images/categories/React-icon.png";
@@ -27,6 +27,7 @@ export const ReactJs = () => {
       description: "React Js, Tailwind Css, API",
       liveUrl: "https://reach-star-blog.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/reachStar-blog",
+      progress: false,
     },
     {
       id: 2,
@@ -35,6 +36,7 @@ export const ReactJs = () => {
       description: "React Js, Tailwind Css",
       liveUrl: "https://mydesigno.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/designo",
+      progress: false,
     },
     {
       id: 3,
@@ -43,6 +45,7 @@ export const ReactJs = () => {
       description: "React Js, Scss",
       liveUrl: "https://frontend-github-users.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/searchGithubUsers",
+      progress: false,
     },
     {
       id: 4,
@@ -51,6 +54,7 @@ export const ReactJs = () => {
       description: "React Js, Css",
       liveUrl: "https://reachstar-todo.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/todo",
+      progress: false,
     },
     {
       id: 5,
@@ -59,6 +63,7 @@ export const ReactJs = () => {
       description: "React Js, Scss",
       liveUrl: "https://frontendmentor-accordion.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/react-accordion",
+      progress: false,
     },
     {
       id: 6,
@@ -67,6 +72,7 @@ export const ReactJs = () => {
       description: "React Js, Scss",
       liveUrl: "https://frontendmentors-qr-app.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/frontendmentors-qr-app",
+      progress: false,
     },
     {
       id: 7,
@@ -75,6 +81,7 @@ export const ReactJs = () => {
       description: "React Js, Typescript, Scss, Bootstrap",
       liveUrl: "https://typemaster-app.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/typemaster",
+      progress: false,
     },
     {
       id: 8,
@@ -83,6 +90,7 @@ export const ReactJs = () => {
       description: "React Js, Scss, Bootstrap",
       liveUrl: "https://marketplace-nft-react.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/react-ntf",
+      progress: false,
     },
     {
       id: 9,
@@ -91,6 +99,7 @@ export const ReactJs = () => {
       description: "React Js, Scss, Bootstrap",
       liveUrl: "https://linked-in-js.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/linkedin",
+      progress: false,
     },
     {
       id: 10,
@@ -99,6 +108,7 @@ export const ReactJs = () => {
       description: "React Js, Scss, Bootstrap",
       liveUrl: "https://bandage-react.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/bandage",
+      progress: false,
     },
     {
       id: 11,
@@ -107,15 +117,16 @@ export const ReactJs = () => {
       description: "React Js, Scss, Bootstrap",
       liveUrl: "https://travelog-react.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/travlog",
+      progress: false,
     },
     {
       id: 12,
       imageSrc: BmiImage,
-      title: "BMI mass index",
+      title: "body mass index",
       description: "React Js, TailwindCss",
       liveUrl: "https://our-bmi.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/bmi",
-      progress: true,
+      progress: false,
     },
   ]);
   return (
@@ -127,7 +138,7 @@ export const ReactJs = () => {
         }
       />
       <div className="container py-24 md:py-[120px] lg:py-[160px] px-6 md:px-0 grid lg:grid-cols-3 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
-        {reactJsCardContent.map((item) => (
+        {reactJsCardContent.reverse().map((item) => (
           <DesignCards item={item} key={item.id} />
         ))}
       </div>

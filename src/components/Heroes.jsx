@@ -12,7 +12,7 @@ export const PrimaryHero = () => {
       <div className="lg:flex h-full lg:items-center">
         <section className="relative z-10 flex flex-col items-center justify-center lg:block text-center lg:text-left">
           <h1 className="text-[32px] leading-9 md:text-5xl font-medium text-white max-w-[415px] md:max-w-[573px] lg:w-[540px] capitalize">
-            Aleksi S. - junior-middle front-end developer
+            Aleksi,<br />junior front-end developer
           </h1>
           <p className="text-[15px] md:text-base leading-[25px] md:leading-[26px] text-white mt-6 md:mt-8 lg:mt-8 mb-4 min-[375px]:mb-7 md:mb-5 lg:mb-10 max-w-[415px] md:max-w-[460px] lg:w-[440px]">
             With over 3 years in freelancing and 2 years in a particular
