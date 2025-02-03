@@ -14,6 +14,7 @@ import LinkedinImage from "../images/cards/react-cards/linkedin.png";
 import BandageImage from "../images/cards/react-cards/bandage.png";
 import TravlogImage from "../images/cards/react-cards/travlog.png";
 import BmiImage from "../images/cards/react-cards/bmi.png";
+import moviesImage from "../images/cards/react-cards/movies.jpg";
 
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
 import ReactNativeImage from "../images/categories/React-icon.png";
@@ -127,6 +128,15 @@ export const ReactJs = () => {
       liveUrl: "https://our-bmi.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/bmi",
       progress: false,
+    },
+    {
+      id: 13,
+      imageSrc: moviesImage,
+      title: "Entertainment web app",
+      description: "React Js, TailwindCss",
+      liveUrl: "https://our-movie.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/movies",
+      progress: true,
     },
   ]);
   return (
