@@ -5,7 +5,7 @@ export const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "836fa0f0-c363-4c28-a59d-1cf24f7111c2");
+    formData.append("access_key", "5c3fc492-dbf1-47c3-ab3d-321751ff2830");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -27,7 +27,7 @@ export const Contact = () => {
         title: "Error!",
         text: "Do you want to continue",
         icon: "error",
-        confirmButtonText: "Cool",
+        confirmButtonText: "Ok",
       });
     }
   };
