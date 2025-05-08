@@ -17,7 +17,7 @@ import BmiImage from "../images/cards/react-cards/bmi.png";
 import moviesImage from "../images/cards/react-cards/movies.jpg";
 
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
-import ReactNativeImage from "../images/categories/React-icon.png";
+import ReactNativeImage from "../images/categories/typescript.png";
 
 export const ReactJs = () => {
   const [reactJsCardContent] = useState([
@@ -162,7 +162,7 @@ export const ReactJs = () => {
         <CategoriesCard
           url="reactnative"
           img={ReactNativeImage}
-          title="react native"
+          title="typescript"
           lgHeight="lg:h-[308px]"
         />
       </div>

@@ -1,6 +1,6 @@
 import ReactImage from "../images/categories/react-framework-logo.webp";
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
-import ReactNative from "../images/categories/React-icon.png";
+import ReactNative from "../images/categories/typescript.png";
 import { CategoriesCard } from "./Cards";
 
 export const Categories = () => {
@@ -24,7 +24,7 @@ export const Categories = () => {
         <CategoriesCard
           url="reactnative"
           img={ReactNative}
-          title="react native"
+          title="typescript"
           lgHeight="lg:h-[308px]"
         />
       </div>

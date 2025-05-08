@@ -10,9 +10,9 @@ export const ReactNative = () => {
   return (
     <div className="md:container md:px-10 xl:px-[85px]">
       <SecondaryHero
-        title={"react native"}
+        title={"typescript"}
         description={
-          "React Native is an open-source UI software framework developed by Facebook Inc. It is used to develop applications for Android and IOS."
+          "TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript."
         }
       />
       <div className="container py-24 md:py-[120px] lg:py-[160px] px-6 md:px-0 grid lg:grid-cols-3 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
@@ -22,7 +22,7 @@ export const ReactNative = () => {
           ))
         ) : (
           <h2 className="font-semibold text-lg">
-            No react Native projects at this time
+            No typescript projects at this time
           </h2>
         )}
       </div>

@@ -9,7 +9,7 @@ import StickersImage from "../images/cards/javascript-cards/stickers.png";
 import MexicanImage from "../images/cards/javascript-cards/mexican.png";
 
 import ReactImage from "../images/categories/react-framework-logo.webp";
-import ReactNativeImage from "../images/categories/React-icon.png";
+import ReactNativeImage from "../images/categories/typescript.png";
 
 export const Javascript = () => {
   const [javascriptCardsContent] = useState([
@@ -75,7 +75,7 @@ export const Javascript = () => {
         <CategoriesCard
           url="reactnative"
           img={ReactNativeImage}
-          title="react native"
+          title="typescript"
           lgHeight="lg:h-[308px]"
         />
       </div>
