@@ -7,7 +7,7 @@ import InProgress from "./InProgress";
 
 export const DesignCards = ({ item }) => {
   return (
-    <div className="rounded-[15px] overflow-hidden md:flex lg:block md:h-[310px] lg:h-auto group shadow-lg bg-[#fdf3f0] hover:bg-peach transition duration-300 easy-in-out">
+    <div className="rounded-[15px] overflow-hidden md:flex lg:block md:h-[310px] lg:h-auto group shadow-lg bg-[#fdf3f0] hover:bg-peach transition duration-300 easy-in-out hover:shadow-2xl">
       <div
         className="bg-top bg-cover bg-no-repeat min-h-80 md:min-h-[310px] lg:min-h-80 md:w-[338px] lg:w-full relative"
         style={{ backgroundImage: `url(${item.imageSrc})` }}

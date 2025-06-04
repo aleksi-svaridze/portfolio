@@ -15,6 +15,7 @@ import BandageImage from "../images/cards/react-cards/bandage.png";
 import TravlogImage from "../images/cards/react-cards/travlog.png";
 import BmiImage from "../images/cards/react-cards/bmi.png";
 import moviesImage from "../images/cards/react-cards/movies.jpg";
+import techBlogImage from "../images/cards/react-cards/tech-blog.png";
 
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
 import ReactNativeImage from "../images/categories/typescript.png";
@@ -137,6 +138,15 @@ export const ReactJs = () => {
       liveUrl: "https://our-movie.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/movies",
       progress: true,
+    },
+    {
+      id: 14,
+      imageSrc: techBlogImage,
+      title: "Tech Blog",
+      description: "React Js, TailwindCss",
+      liveUrl: "https://lively-swan-de89cd.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/tech-blog",
+      progress: false,
     },
   ]);
   return (
