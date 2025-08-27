@@ -16,6 +16,7 @@ import TravlogImage from "../images/cards/react-cards/travlog.png";
 import BmiImage from "../images/cards/react-cards/bmi.png";
 import moviesImage from "../images/cards/react-cards/movies.jpg";
 import techBlogImage from "../images/cards/react-cards/tech-blog.png";
+import DesignerPortfolio from "../images/cards/react-cards/designer-portfolio.png";
 
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
 import AngularImage from "../images/categories/Angular_full_color_logo.svg.png";
@@ -146,6 +147,15 @@ export const ReactJs = () => {
       description: "React Js, TailwindCss",
       liveUrl: "https://lively-swan-de89cd.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/tech-blog",
+      progress: false,
+    },
+    {
+      id: 15,
+      imageSrc: DesignerPortfolio,
+      title: "Designer Portfolio",
+      description: "React Js, Scss, Bootstrap",
+      liveUrl: "https://spiffy-starship-e62c90.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/react-portfolio",
       progress: false,
     },
   ]);
