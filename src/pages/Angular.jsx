@@ -5,8 +5,20 @@ import { SecondaryHero } from "../components/Heroes";
 import ReactImage from "../images/categories/react-framework-logo.webp";
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
 
+import ExtensionImage from "../images/cards/angular-cards/extensions.png";
+
 export const Angular = () => {
-  const [reactNativeCardsContent] = useState();
+  const [angularCardContent] = useState([
+    {
+      id: 1,
+      imageSrc: ExtensionImage,
+      title: "Browser Extention List",
+      description: "Angular, Scss",
+      liveUrl: "https://monumental-speculoos-6a5599.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/fm-browser-extension",
+      progress: true,
+    },
+  ]);
   return (
     <div className="md:container md:px-10 xl:px-[85px]">
       <SecondaryHero
@@ -16,8 +28,8 @@ export const Angular = () => {
         }
       />
       <div className="container py-24 md:py-[120px] lg:py-[160px] px-6 md:px-0 grid lg:grid-cols-3 gap-y-10 lg:gap-y-8 lg:gap-x-[30px]">
-        {reactNativeCardsContent ? (
-          reactNativeCardsContent.map((item) => (
+        {angularCardContent ? (
+          angularCardContent.map((item) => (
             <DesignCards item={item} key={item.id} />
           ))
         ) : (
