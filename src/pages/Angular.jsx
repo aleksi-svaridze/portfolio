@@ -18,6 +18,15 @@ export const Angular = () => {
       gitUrl: "https://github.com/aleksi-svaridze/fm-browser-extension",
       progress: true,
     },
+    {
+      id: 2,
+      imageSrc: "",
+      title: "Nft card example",
+      description: "Angular, Scss",
+      liveUrl: "https://visionary-arithmetic-5509a3.netlify.app/",
+      gitUrl: "https://github.com/aleksi-svaridze/ng-nft-card",
+      progress: true,
+    },
   ]);
   return (
     <div className="md:container md:px-10 xl:px-[85px]">
