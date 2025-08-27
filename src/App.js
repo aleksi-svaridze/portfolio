@@ -11,7 +11,7 @@ import { Footer } from "./components/Footer";
 
 import { Javascript } from "./pages/Javascript";
 import { ReactJs } from "./pages/ReactJs";
-import { ReactNative } from "./pages/ReactNative";
+import { Angular } from "./pages/Angular";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="javascript" element={<Javascript />} />
         <Route path="reactjs" element={<ReactJs />} />
-        <Route path="reactnative" element={<ReactNative />} />
+        <Route path="angular" element={<Angular />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

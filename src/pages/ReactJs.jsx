@@ -18,7 +18,7 @@ import moviesImage from "../images/cards/react-cards/movies.jpg";
 import techBlogImage from "../images/cards/react-cards/tech-blog.png";
 
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
-import ReactNativeImage from "../images/categories/typescript.png";
+import AngularImage from "../images/categories/Angular_full_color_logo.svg.png";
 
 export const ReactJs = () => {
   const [reactJsCardContent] = useState([
@@ -170,9 +170,9 @@ export const ReactJs = () => {
           lgHeight="lg:h-[308px]"
         />
         <CategoriesCard
-          url="reactnative"
-          img={ReactNativeImage}
-          title="typescript"
+          url="angular"
+          img={AngularImage}
+          title="angular"
           lgHeight="lg:h-[308px]"
         />
       </div>

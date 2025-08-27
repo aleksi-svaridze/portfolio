@@ -1,6 +1,6 @@
 import ReactImage from "../images/categories/react-framework-logo.webp";
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
-import ReactNative from "../images/categories/typescript.png";
+import AngularImage from "../images/categories/Angular_full_color_logo.svg.png";
 import { CategoriesCard } from "./Cards";
 
 export const Categories = () => {
@@ -22,9 +22,9 @@ export const Categories = () => {
         />
 
         <CategoriesCard
-          url="reactnative"
-          img={ReactNative}
-          title="typescript"
+          url="angular"
+          img={AngularImage}
+          title="angular"
           lgHeight="lg:h-[308px]"
         />
       </div>
