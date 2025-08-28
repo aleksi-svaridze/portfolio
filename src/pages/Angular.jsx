@@ -6,6 +6,7 @@ import ReactImage from "../images/categories/react-framework-logo.webp";
 import JavascriptImage from "../images/categories/javascript-736401_1280.png";
 
 import ExtensionImage from "../images/cards/angular-cards/extensions.png";
+import NftCardImage from "../images/cards/angular-cards/nft-card.png";
 
 export const Angular = () => {
   const [angularCardContent] = useState([
@@ -20,12 +21,12 @@ export const Angular = () => {
     },
     {
       id: 2,
-      imageSrc: "",
+      imageSrc: NftCardImage,
       title: "Nft card example",
       description: "Angular, Scss",
       liveUrl: "https://visionary-arithmetic-5509a3.netlify.app/",
       gitUrl: "https://github.com/aleksi-svaridze/ng-nft-card",
-      progress: true,
+      progress: false,
     },
   ]);
   return (
