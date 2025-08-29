@@ -20,7 +20,7 @@ export const DesignCards = ({ item }) => {
       </div>
 
       <section className="h-40 md:h-auto md:w-[351px] lg:h-40 lg:w-full text-center flex flex-col gap-y-4 justify-center relative">
-        <h2 className="font-medium text-xl leading-[26px] tracking-[5px] uppercase text-peach group-hover:hidden">
+        <h2 className="font-medium text-xl leading-[26px] tracking-[5px] capitalize text-peach group-hover:hidden">
           {item.title}
         </h2>
         <p className="text-base leading-[26px] text-dark-gray group-hover:hidden">
