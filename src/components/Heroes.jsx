@@ -1,40 +1,23 @@
-import PrimaryHeroImg from "../images/hero_images/primaryHeroImg.png";
-import PrimaryHeroImgMobile from "../images/hero_images/primaryHeroImgMobile.png";
-import { useWindowSize } from "@uidotdev/usehooks";
+// import { useWindowSize } from "@uidotdev/usehooks";
 
 export const PrimaryHero = () => {
-  const { width } = useWindowSize();
+  // const { width } = useWindowSize();
 
   return (
-    <div className="relative h-[843px] lg:h-[640px] bg-peach md:rounded-[15px] pt-20 md:pt-[60px] lg:pt-0 px-7 lg:px-16 xl:px-24 overflow-hidden">
-      <div className="w-[640px] h-[640px] rounded-full absolute top-[50%] -translate-y-[50%] left-0 md:left-auto md:-right-32 xl:-translate-y-[0] xl:right-0 xl:top-0 xl:bottom-0 bg-gradient-to-t from-transparent to-[#5D0202]/50"></div>
+    <div className="relative bg-peach md:rounded-[15px] py-20 md:py-10 lg:py-16 px-7 lg:px-16 xl:px-24 overflow-hidden">
+      <div className="w-[640px] h-[640px] rounded-full absolute top-[50%] -translate-y-[50%] left-0 md:left-auto md:-right-32 xl:-translate-y-[0] xl:right-0 xl:top-0 xl:bottom-0 bg-gradient-to-t from-transparent to-[#5D0202]/30"></div>
 
-      <div className="lg:flex h-full lg:items-center">
-        <section className="relative z-10 flex flex-col items-center justify-center lg:block text-center lg:text-left">
-          <h1 className="text-[32px] leading-9 md:text-5xl font-medium text-white max-w-[415px] md:max-w-[573px] lg:w-[540px] capitalize">
-            Aleksi,<br />junior front-end developer
-          </h1>
-          <p className="text-[15px] md:text-base leading-[25px] md:leading-[26px] text-white mt-6 md:mt-8 lg:mt-8 mb-4 min-[375px]:mb-7 md:mb-5 lg:mb-10 max-w-[415px] md:max-w-[460px] lg:w-[440px]">
-            With over 3 years in freelancing and 2 years in a particular
-            company, I am experienced in creating fully responsive websites and
-            various types in web technology. Scroll down for more about my
-            projects.
-          </p>
-        </section>
-        {width >= 1024 ? (
-          <img
-            src={PrimaryHeroImg}
-            alt=""
-            className="absolute right-0 bottom-0"
-          />
-        ) : (
-          <img
-            src={PrimaryHeroImgMobile}
-            alt=""
-            className="absolute left-[50%] -translate-x-[50%] bottom-0"
-          />
-        )}
-      </div>
+      <section className="text-white">
+        <h1 className="text-2xl md:text-3xl font-medium  capitalize">
+          About me
+        </h1>
+        <p className="lg:text-lg md:text-base mt-6">
+          Hi, I am Alex. With over 3 years in freelancing and 2 years in a
+          particular company, I am experienced in creating fully responsive
+          websites and various types in web technology. Scroll down for more
+          about my projects.
+        </p>
+      </section>
     </div>
   );
 };
